@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# MovieTicketBookingSystem
-🎬 A complete Movie Ticket Booking System built using Core Java, featuring OOP, File Handling (CSV), Collections, Exception Handling, and Multithreading — perfect for beginners and academic projects.
-=======
 🎬🍿 Movie Ticket Booking System – Core Java Project
 <p align="center"> <img src="https://img.shields.io/badge/Language-Java-red?style=for-the-badge"> <img src="https://img.shields.io/badge/Project-Type%20:Core%20Java-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Data-CSV%20File-orange?style=for-the-badge"> <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"> </p>
 
@@ -114,4 +110,3 @@ Add logs for transactions
 Souvik Dhar
 Chitkara University
 Batch: 2022–2026
->>>>>>> ab745ad (Initial full project upload)
