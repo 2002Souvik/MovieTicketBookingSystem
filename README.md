@@ -89,6 +89,9 @@ javac -d bin (Get-ChildItem -Recurse -Filter *.java).FullName
 ▶ 2. Run
 java -cp bin main.MovieTicketBooking
 
+▶ 3. Rechange
+javac -d bin (Get-ChildItem -Recurse -Filter *.java).FullName
+
 📚 Core Java Concepts Used
 Concept	Explanation
 OOP	Classes for Movie, Booking & system behavior

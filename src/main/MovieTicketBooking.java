@@ -27,7 +27,7 @@ public class MovieTicketBooking {
         System.out.println("Date: " + LocalDate.now().format(DateTimeFormatter.ofPattern("dd MMM uuuu")));
 
         while (true) {
-            System.out.println("\\nSelect option:");
+            System.out.println("Select option:");
             System.out.println("1. Book Ticket");
             System.out.println("2. Cancel Your Ticket");
             System.out.println("3. Check Availability");
@@ -79,7 +79,7 @@ public class MovieTicketBooking {
                         String bid = bs.book(mid, show, seatType, qty);
                         java.util.Optional<Booking> b = java.util.Optional.ofNullable(bs.getBooking(bid));
                         b.ifPresent(booking -> {
-                            System.out.println("\\n*** Ticket Invoice ***");
+                            System.out.println("*** Ticket Invoice ***");
                             System.out.println("Booking ID: " + booking.getBookingId());
                             System.out.println("Movie: " + bs.getMovies().stream().filter(m -> m.getId() == booking.getMovieId()).findFirst().map(Movie::getTitle).orElse("Unknown"));
                             System.out.println("Show: " + booking.getShow());
@@ -106,8 +106,14 @@ public class MovieTicketBooking {
                     int mid = Integer.parseInt(in.nextLine().trim());
                     bs.printAvailability(mid);
                 } else if (action == 4) {
-                    System.out.println("Upcoming Movies:");
-                    String[] upcoming = {"APR 2023 - DASARA", "APR 2023 - DAS KI DAMKI", "APR 2023 - AMIGOS"};
+                    System.out.println("Upcoming Movies(2025):");
+                    String[] upcoming = {
+                        " Jan  Hanuman 2",
+                        " Feb  Stree 2",
+                        " Mar  War 2",
+                        " Apr  Pushpa 2",
+                        " May  Bhool Bhulaiyaa 3"
+                };
                     for (String s : upcoming) { System.out.println(s); Thread.sleep(300); }
                 } else if (action == 5) {
                     System.out.println("Your saved bookings (from CSV):");
